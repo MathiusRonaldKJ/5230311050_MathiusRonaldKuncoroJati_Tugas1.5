@@ -22,97 +22,156 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'IDENTITAS MAHASISWA',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.5,
-                color: Colors.blue,
-              ),
-              textAlign: TextAlign.center,
+      body: Container(
+        color: const Color.fromARGB(255, 167, 216, 250),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'IDENTITAS MAHASISWA',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.5,
+                    color: Color.fromARGB(255, 247, 75, 75),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                
+                const SizedBox(height: 30),
+                
+                Container(
+                  width: 380, 
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // NPM
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 100, 
+                            child: Text(
+                              'NPM',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          ),
+                          Text(':', style: TextStyle(fontSize: 16)),
+                          SizedBox(width: 15),
+                          Expanded(
+                            child: Text(
+                              '5230311050',
+                              style: TextStyle(color: Colors.black87, fontSize: 16),
+                              softWrap: false, // Mencegah teks turun ke bawah
+                              overflow: TextOverflow.visible, // Teks akan tetap di baris yang sama
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 12),
+                      
+                      // Nama
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 100,
+                            child: Text(
+                              'Nama',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          ),
+                          Text(':', style: TextStyle(fontSize: 16)),
+                          SizedBox(width: 15),
+                          Expanded(
+                            child: Text(
+                              'Mathius Ronald Kuncoro Jati',
+                              style: TextStyle(color: Colors.black87, fontSize: 16),
+                              softWrap: false,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 12),
+                      
+                      // Program Studi
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 100,
+                            child: Text(
+                              'Prodi',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          ),
+                          Text(':', style: TextStyle(fontSize: 16)),
+                          SizedBox(width: 15),
+                          Expanded(
+                            child: Text(
+                              'Sistem Informasi',
+                              style: TextStyle(color: Colors.black87, fontSize: 16),
+                              softWrap: false,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 12),
+                      
+                      // Fakultas
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 100,
+                            child: Text(
+                              'Fakultas',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          ),
+                          Text(':', style: TextStyle(fontSize: 16)),
+                          SizedBox(width: 15),
+                          Expanded(
+                            child: Text(
+                              'Sains & Teknologi',
+                              style: TextStyle(color: Colors.black87, fontSize: 16),
+                              softWrap: false,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 12),
+                      
+                      // Universitas
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 100,
+                            child: Text(
+                              'Universitas',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          ),
+                          Text(':', style: TextStyle(fontSize: 16)),
+                          SizedBox(width: 15),
+                          Expanded(
+                            child: Text(
+                              'Universitas Teknologi Yogyakarta',
+                              style: TextStyle(color: Colors.black87, fontSize: 16),
+                              softWrap: false,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
-            
-            const SizedBox(height: 30),
-            
-            Container(
-              width: 320,
-              padding: const EdgeInsets.only(left: 20), 
-              child: const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // NPM
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: 50,
-                        child: Text(
-                          'NPM',
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                        ),
-                      ),
-                      Text(':', style: TextStyle(fontSize: 16)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          '5230311050',
-                          style: TextStyle(color: Colors.black87, fontSize: 16),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10),
-                  
-                  // Nama
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: 50,
-                        child: Text(
-                          'Nama',
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                        ),
-                      ),
-                      Text(':', style: TextStyle(fontSize: 16)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          'Mathius Ronald Kuncoro Jati',
-                          style: TextStyle(color: Colors.black87, fontSize: 16),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10),
-                  
-                  // Program Studi
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: 50,
-                        child: Text(
-                          'Prodi',
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                        ),
-                      ),
-                      Text(':', style: TextStyle(fontSize: 16)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          'Sistem Informasi',
-                          style: TextStyle(color: Colors.black87, fontSize: 16),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
