@@ -64,8 +64,8 @@ class HomePage extends StatelessWidget {
                             child: Text(
                               '5230311050',
                               style: TextStyle(color: Colors.black87, fontSize: 16),
-                              softWrap: false, // Mencegah teks turun ke bawah
-                              overflow: TextOverflow.visible, // Teks akan tetap di baris yang sama
+                              softWrap: false, 
+                              overflow: TextOverflow.visible, 
                             ),
                           ),
                         ],
