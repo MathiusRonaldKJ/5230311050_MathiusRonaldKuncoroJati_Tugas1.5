@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                 const SizedBox(height: 30),
                 
                 Container(
-                  width: 380, 
+                  width: 420, 
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                       Row(
                         children: [
                           SizedBox(
-                            width: 100, 
+                            width: 120, // 
                             child: Text(
                               'NPM',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                       Row(
                         children: [
                           SizedBox(
-                            width: 100,
+                            width: 120,
                             child: Text(
                               'Nama',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
@@ -100,9 +100,9 @@ class HomePage extends StatelessWidget {
                       Row(
                         children: [
                           SizedBox(
-                            width: 100,
+                            width: 120,
                             child: Text(
-                              'Prodi',
+                              'Program Studi',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                             ),
                           ),
@@ -124,7 +124,7 @@ class HomePage extends StatelessWidget {
                       Row(
                         children: [
                           SizedBox(
-                            width: 100,
+                            width: 120,
                             child: Text(
                               'Fakultas',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
@@ -148,7 +148,7 @@ class HomePage extends StatelessWidget {
                       Row(
                         children: [
                           SizedBox(
-                            width: 100,
+                            width: 120,
                             child: Text(
                               'Universitas',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
