@@ -26,7 +26,6 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Judul IDENTITAS MAHASISWA dengan warna biru
             const Text(
               'IDENTITAS MAHASISWA',
               style: TextStyle(
@@ -40,10 +39,9 @@ class HomePage extends StatelessWidget {
             
             const SizedBox(height: 30),
             
-            // Container untuk konten yang rata kiri dengan padding kiri
             Container(
               width: 320,
-              padding: const EdgeInsets.only(left: 20), // Geser ke kanan 20 pixel
+              padding: const EdgeInsets.only(left: 20), 
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
