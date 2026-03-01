@@ -23,85 +23,98 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Judul IDENTITAS MAHASISWA dengan warna biru
-              const Text(
-                'IDENTITAS MAHASISWA',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.5,
-                  color: Colors.blue, // Warna biru
-                ),
-                textAlign: TextAlign.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Judul IDENTITAS MAHASISWA dengan warna biru
+            const Text(
+              'IDENTITAS MAHASISWA',
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.5,
+                color: Colors.blue,
               ),
-              
-              const SizedBox(height: 30),
-              
-              // Container untuk konten yang rata kiri
-              Container(
-                width: 300,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // NPM
-                    Row(
-                      children: [
-                        const Text(
+              textAlign: TextAlign.center,
+            ),
+            
+            const SizedBox(height: 30),
+            
+            // Container untuk konten yang rata kiri dengan padding kiri
+            Container(
+              width: 320,
+              padding: const EdgeInsets.only(left: 20), // Geser ke kanan 20 pixel
+              child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // NPM
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 50,
+                        child: Text(
                           'NPM',
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
-                        const SizedBox(width: 20),
-                        Text(
-                          ': 5230311050',
-                          style: TextStyle(color: Colors.grey[700], fontSize: 16),
+                      ),
+                      Text(':', style: TextStyle(fontSize: 16)),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          '5230311050',
+                          style: TextStyle(color: Colors.black87, fontSize: 16),
                         ),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    
-                    // Nama
-                    Row(
-                      children: [
-                        const Text(
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  
+                  // Nama
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 50,
+                        child: Text(
                           'Nama',
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
-                        const SizedBox(width: 20),
-                        Expanded(
-                          child: Text(
-                            ': Mathius Ronald Kuncoro Jati',
-                            style: TextStyle(color: Colors.grey[700], fontSize: 16),
-                          ),
+                      ),
+                      Text(':', style: TextStyle(fontSize: 16)),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          'Mathius Ronald Kuncoro Jati',
+                          style: TextStyle(color: Colors.black87, fontSize: 16),
                         ),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    
-                    // Program Studi
-                    Row(
-                      children: [
-                        const Text(
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  
+                  // Program Studi
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 50,
+                        child: Text(
                           'Prodi',
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
-                        const SizedBox(width: 20),
-                        Text(
-                          ': Sistem Informasi',
-                          style: TextStyle(color: Colors.grey[700], fontSize: 16),
+                      ),
+                      Text(':', style: TextStyle(fontSize: 16)),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          'Sistem Informasi',
+                          style: TextStyle(color: Colors.black87, fontSize: 16),
                         ),
-                      ],
-                    ),
-                  ],
-                ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
